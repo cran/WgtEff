@@ -1,0 +1,36 @@
+---
+title: "Package WgtEff"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{WgtEff}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(WgtEff)
+```
+Weighting survey data in order to reduce sampling bias usually increases the data's variance;  that increase in variance diminishes the survey's precision; and that loss in precision, a component of Total Survey Error (TSE), can be quantified by statistics which package WgtEff calculates for n = sample size and x = weight values: 
+
+  * Design effect (DEFF) due to weighting => n * (sum(x^2) / sum(x)^2) 
+
+  * Weighting loss => DEFF-1
+
+  * Root design effect (DEFT) => square root of DEFF
+
+  * Effective sample size (ESS) => sum(x)^2 / sum(x^2)
+
+  * Weighted margin of error (MOE) => unweighted MOE * DEFT
+
+Package WgtEff contains functions for these statistics; it also contains a function FULL(x) that calculates and prints all of these statistics at once, along with an unweighted margin of error and sample size. 
+
+Package WgtEff works directly from the survey data's weights column - no hand calculations required; just upload the data set, input the name of the weights column, and run the functions.
+
+---
