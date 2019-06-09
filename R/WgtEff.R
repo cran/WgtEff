@@ -63,11 +63,12 @@ ESS=function(x){
 #' @export MOE
 MOE=function(p=50, conf=95, N, wtcol){
   stopifnot(p<=100, p>=0, conf>=0, conf<=100, 
-    N>=length(wtcol), length(wtcol)>2) #stops for bad inputs 
+    length(wtcol)>2) #stops for bad inputs 
   if(missing(N)){fpc=1
   }
   if(!missing(N)){fpc=sqrt((N-length(wtcol))/(N-1))
   } #finite population correction
+
   tt=((100-((100-conf)/2))/100) #converts from two-tailed
   themoe=qnorm(tt)*sqrt(((p/100)*(1-(p/100)))/length(wtcol))*
     fpc*sqrt((((length(wtcol)*
@@ -90,7 +91,7 @@ MOE=function(p=50, conf=95, N, wtcol){
 #' @export FULL
 FULL=function(p=50, conf=95, N, wtcol){
   stopifnot(p<=100, p>=0, conf>=0, conf<=100, 
-    N>=length(wtcol), length(wtcol)>2) #stops for bad inputs
+    length(wtcol)>2) #stops for bad inputs
   if(missing(N)){fpc=1
   }
   if(!missing(N)){fpc=sqrt((N-length(wtcol))/(N-1))

@@ -1,9 +1,9 @@
-6ede0caa96191ef7b4474df02ec4e093 *DESCRIPTION
+bee43ac15808946690335c205cbe7800 *DESCRIPTION
 b26b3c66951905d3e981dffd55aa43db *NAMESPACE
-86f4e1e902ee096c9386b5192eb7b64a *R/WgtEff.R
-4120d0476fdd5d18f596e9f40e946ee2 *R/testweights.R
+726bff71ff6a98e5c6ca02ceadf43a0c *R/WgtEff.R
+e5d1b001381363aa709758809cfff0f3 *R/testweights.R
 d71e0816b06eefb1f414c2d6541a5a84 *build/vignette.rds
-b03668c9364bba8ac3718459ac4ff630 *data/testweights.RData
+30b1d2c07da9ab7a5b30c3e5692b28b7 *data/testweights.RData
 7d7359f857e4055d605f9b94d034b442 *inst/doc/WgtEff.R
 49b8f4c1f5e321d8451afebb7f44eaee *inst/doc/WgtEff.Rmd
 b999b79025b42fdbd3ae08f5b788bd28 *inst/doc/WgtEff.html
@@ -13,5 +13,5 @@ fa9270ed01655ba5b007fcb7fd0b66ed *man/ESS.Rd
 049087ad42c64f3f599046aeb366737f *man/FULL.Rd
 dc519b51d259817f7295c4c50abf4a88 *man/MOE.Rd
 05d3cac793d6c219b5b6365ba005c628 *man/WTGLOSS.Rd
-88cec7c0f9973d1d97d7cf12df4633e1 *man/testweights.Rd
+64f19e29920e2803b0a28e0912d6382d *man/testweights.Rd
 49b8f4c1f5e321d8451afebb7f44eaee *vignettes/WgtEff.Rmd

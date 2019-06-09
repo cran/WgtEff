@@ -1,6 +1,6 @@
-#' An example weights column for a data set of 320 cases
+#' An example weights column for a data set of 80 cases
 #' 
-#' @format A data frame with 320 rows and 1 variable
+#' @format A data frame with 80 rows and 1 variable
 #' \describe{\item{weights_column}{data weights}
 #' }
 #' 
